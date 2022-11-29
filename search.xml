@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>力扣71题：简化路径</title>
+      <link href="/2022/11/29/%E5%8A%9B%E6%89%A371%E9%A2%98%EF%BC%9A%E7%AE%80%E5%8C%96%E8%B7%AF%E5%BE%84/"/>
+      <url>/2022/11/29/%E5%8A%9B%E6%89%A371%E9%A2%98%EF%BC%9A%E7%AE%80%E5%8C%96%E8%B7%AF%E5%BE%84/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="思路：栈"><a href="#思路：栈" class="headerlink" title="思路：栈"></a>思路：栈</h2><pre><code class="javascript">var simplifyPath = function(path) &#123;  let arr = []  let str = &#39;&#39;  let arr1 = path.split(&#39;/&#39;)  console.log(arr1)  arr1.forEach(item =&gt;&#123;      if(item &amp;&amp; item === &#39;..&#39;) &#123;          arr.pop()      &#125; else if(item &amp;&amp; item !== &#39;.&#39;) &#123;          arr.push(item)      &#125;  &#125;)  str = arr.length ? &quot;/&quot; + arr.join(&#39;/&#39;) : &#39;/&#39;  return str&#125;;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 力扣 </tag>
+            
+            <tag> 数据结构与算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>力扣1047题：删除字符串中的所有相邻重复项</title>
       <link href="/2022/11/29/%E5%8A%9B%E6%89%A31047%E9%A2%98%EF%BC%9A%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E7%9B%B8%E9%82%BB%E9%87%8D%E5%A4%8D%E9%A1%B9/"/>
       <url>/2022/11/29/%E5%8A%9B%E6%89%A31047%E9%A2%98%EF%BC%9A%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E7%9B%B8%E9%82%BB%E9%87%8D%E5%A4%8D%E9%A1%B9/</url>
